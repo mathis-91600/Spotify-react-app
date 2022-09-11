@@ -1,0 +1,50 @@
+.bg-artist{
+    position: relative;
+    background-color: cornflowerblue;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+
+.bg-artist::before{
+    content: '';
+    background: url(../images/play-button.svg);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    right: 6px;
+    bottom: 70px;
+}
+
+.bg-artist .bg-artist-photo{
+    margin-top: 10px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.bg-artist .bg-artist-photo img{
+    border-radius: 169px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.bg-artist p{
+    color: white;
+}
+
+.bg-artist p:nth-child(2){
+    margin-bottom: 7px;
+}
+
+.bg-artist p:nth-child(3){
+    margin-top: 0;
+}
